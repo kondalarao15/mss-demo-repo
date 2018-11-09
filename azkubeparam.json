@@ -1,0 +1,63 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "msskube"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "dnsPrefix": {
+            "value": "msskube"
+        },
+        "agentCount": {
+            "value": 1
+        },
+        "agentVMSize": {
+            "value": "Standard_DS2_v2"
+        },
+        "servicePrincipalClientId": {
+            "value": "6a2b4d21-d800-45f3-ae3b-b7c55ba48136"
+        },
+        "servicePrincipalClientSecret": {
+            "value": "TwhaqkorZzShJtTld18EqkvbZ3FHz8A/iCEWhzfJOUg="
+        },
+        "kubernetesVersion": {
+            "value": "1.11.3"
+        },
+        "workspaceName": {
+            "value": "DefaultWorkspace-6ff0ac7c-e524-4037-95da-df79d3d82e0c-EUS"
+        },
+        "omsWorkspaceId": {
+            "value": "/subscriptions/6ff0ac7c-e524-4037-95da-df79d3d82e0c/resourcegroups/defaultresourcegroup-eus/providers/microsoft.operationalinsights/workspaces/defaultworkspace-6ff0ac7c-e524-4037-95da-df79d3d82e0c-eus"
+        },
+        "workspaceRegion": {
+            "value": "eastus"
+        },
+        "enableHttpApplicationRouting": {
+            "value": false
+        },
+        "networkPlugin": {
+            "value": "azure"
+        },
+        "enableRBAC": {
+            "value": false
+        },
+        "vnetSubnetID": {
+            "value": "/subscriptions/6ff0ac7c-e524-4037-95da-df79d3d82e0c/resourceGroups/rg_mss/providers/Microsoft.Network/virtualNetworks/vnet_mss/subnets/kubesubnet"
+        },
+        "serviceCidr": {
+            "value": "10.0.0.0/16"
+        },
+        "dnsServiceIP": {
+            "value": "10.0.0.10"
+        },
+        "dockerBridgeCidr": {
+            "value": "172.17.0.1/16"
+        },
+        "principalId": {
+            "value": "331025c9-0fd8-403f-a2d1-bdeb5590e08f"
+        }
+    }
+}
