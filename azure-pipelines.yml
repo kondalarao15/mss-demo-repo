@@ -7,7 +7,7 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 variables:
-  imageName: 'mssdockerdemo:$(build.buildId)'
+  imageName: 'mssdockerdemo'
   dockerId: 'mssdockerregistry'
   dockerpswd: '2YcriYYzQ+Qfrrf/8mXQVYVcTqC41eUr'
   docker-registryurl: 'mssdockerregistry.azurecr.io'
