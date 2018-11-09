@@ -8,7 +8,13 @@ pool:
 
 variables:
   imageName: 'mssdockerdemo:$(build.buildId)'
+  dockerId: 'mssdockerregistry'
+  dockerpswd: '2YcriYYzQ+Qfrrf/8mXQVYVcTqC41eUr'
+  docker-registryurl: 'mssdockerregistry.azurecr.io'
 
 steps:
 - script: docker build -f Dockerfile -t $(imageName) .
   displayName: 'docker build'
+- script: |
+     docker login -u $(dockerId) -p $(dockerpswd) $(docker-registryurl)
+     docker push $(docker-registryurl)/$(imageName)
