@@ -17,4 +17,4 @@ steps:
   displayName: 'docker build'
 - script: |
      docker login -u $(dockerId) -p $(dockerpswd) $(docker-registryurl)
-     docker push $(docker-registryurl)/$(imageName)
+     docker push $(imageName)
